@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D62C1CCC2D9E27F40062C229 /* 1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D62C1CC72D9E27F40062C229 /* 1.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D6F268EB2D851BB000E67F25 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,37 +23,58 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D62C1CC72D9E27F40062C229 /* 1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1.cpp; sourceTree = "<group>"; };
 		D6429BDA2D87E1520049C08B /* data_structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = data_structure; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D66881532D94191C007D02AB /* Exceptions for "data_structure" folder in "data_structure" target */ = {
+		D62C1CEE2DB0DEA40062C229 /* Exceptions for "linkList" folder in "data_structure" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				linkList/LongLongInt.cpp,
+				LongLongInt.cpp,
 			);
 			target = D6F268EC2D851BB000E67F25 /* data_structure */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		D6429BEF2D8AE03B0049C08B /* Exceptions for "data_structure" folder in "Compile Sources" phase from "data_structure" target */ = {
+		D62C1CEF2DB0DEA40062C229 /* Exceptions for "linkList" folder in "Compile Sources" phase from "data_structure" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = D6F268E92D851BB000E67F25 /* Sources */;
 			membershipExceptions = (
-				linkList/memory.h,
+				memory.h,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D6F268EF2D851BB000E67F25 /* data_structure */ = {
+		D62C1CE92DB0DEA40062C229 /* linkList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D66881532D94191C007D02AB /* Exceptions for "data_structure" folder in "data_structure" target */,
-				D6429BEF2D8AE03B0049C08B /* Exceptions for "data_structure" folder in "Compile Sources" phase from "data_structure" target */,
+				D62C1CEE2DB0DEA40062C229 /* Exceptions for "linkList" folder in "data_structure" target */,
+				D62C1CEF2DB0DEA40062C229 /* Exceptions for "linkList" folder in "Compile Sources" phase from "data_structure" target */,
 			);
-			path = data_structure;
+			path = linkList;
+			sourceTree = "<group>";
+		};
+		D62C1CF22DB0DEAD0062C229 /* PriorityQueue */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PriorityQueue;
+			sourceTree = "<group>";
+		};
+		D62C1CFB2DB0DEBE0062C229 /* Queue */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		D62C1D032DB0DEC30062C229 /* Stack */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		D62C1D0B2DB0DEC70062C229 /* tree */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = tree;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -68,8 +93,13 @@
 		D6F268E42D851BB000E67F25 = {
 			isa = PBXGroup;
 			children = (
-				D6F268EF2D851BB000E67F25 /* data_structure */,
 				D6429BDA2D87E1520049C08B /* data_structure */,
+				D62C1CC72D9E27F40062C229 /* 1.cpp */,
+				D62C1D0B2DB0DEC70062C229 /* tree */,
+				D62C1D032DB0DEC30062C229 /* Stack */,
+				D62C1CFB2DB0DEBE0062C229 /* Queue */,
+				D62C1CF22DB0DEAD0062C229 /* PriorityQueue */,
+				D62C1CE92DB0DEA40062C229 /* linkList */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +119,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D6F268EF2D851BB000E67F25 /* data_structure */,
+				D62C1CE92DB0DEA40062C229 /* linkList */,
+				D62C1CF22DB0DEAD0062C229 /* PriorityQueue */,
+				D62C1CFB2DB0DEBE0062C229 /* Queue */,
+				D62C1D032DB0DEC30062C229 /* Stack */,
+				D62C1D0B2DB0DEC70062C229 /* tree */,
 			);
 			name = data_structure;
 			packageProductDependencies = (
@@ -137,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62C1CCC2D9E27F40062C229 /* 1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
