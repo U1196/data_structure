@@ -19,12 +19,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D6F268ED2D851BB000E67F25 /* data_structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = data_structure; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6429BDA2D87E1520049C08B /* data_structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = data_structure; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D66881532D94191C007D02AB /* Exceptions for "data_structure" folder in "data_structure" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				linkList/LongLongInt.cpp,
+			);
+			target = D6F268EC2D851BB000E67F25 /* data_structure */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		D6429BEF2D8AE03B0049C08B /* Exceptions for "data_structure" folder in "Compile Sources" phase from "data_structure" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = D6F268E92D851BB000E67F25 /* Sources */;
+			membershipExceptions = (
+				linkList/memory.h,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D6F268EF2D851BB000E67F25 /* data_structure */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D66881532D94191C007D02AB /* Exceptions for "data_structure" folder in "data_structure" target */,
+				D6429BEF2D8AE03B0049C08B /* Exceptions for "data_structure" folder in "Compile Sources" phase from "data_structure" target */,
+			);
 			path = data_structure;
 			sourceTree = "<group>";
 		};
@@ -45,16 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				D6F268EF2D851BB000E67F25 /* data_structure */,
-				D6F268EE2D851BB000E67F25 /* Products */,
+				D6429BDA2D87E1520049C08B /* data_structure */,
 			);
-			sourceTree = "<group>";
-		};
-		D6F268EE2D851BB000E67F25 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D6F268ED2D851BB000E67F25 /* data_structure */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,7 +95,7 @@
 			packageProductDependencies = (
 			);
 			productName = data_structure;
-			productReference = D6F268ED2D851BB000E67F25 /* data_structure */;
+			productReference = D6429BDA2D87E1520049C08B /* data_structure */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -89,10 +105,11 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					D6F268EC2D851BB000E67F25 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -106,7 +123,7 @@
 			mainGroup = D6F268E42D851BB000E67F25;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D6F268EE2D851BB000E67F25 /* Products */;
+			productRefGroup = D6F268E42D851BB000E67F25;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -160,7 +177,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XL8V6J6BQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -221,7 +240,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XL8V6J6BQ8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -244,20 +265,25 @@
 		D6F268F52D851BB000E67F25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XL8V6J6BQ8;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		D6F268F62D851BB000E67F25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XL8V6J6BQ8;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
